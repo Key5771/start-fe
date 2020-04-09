@@ -80,9 +80,24 @@ todos.forEach(function(todo) {
 //     console.log(a);
 // })();
 
-function sum(x, y) {
-    if (!y) y = 1;
-    return x + y;
-}
+// function sum(x, y) {
+//     if (!y) y = 1;
+//     return x + y;
+// }
 
-console.log(sum(3));
+// console.log(sum(3));
+
+// function gugudan() {
+//     for(i = 2; i <= 9; i++) {
+//         for(j = 1; j <= 9; j++) {
+//             console.log(i + " * " + j + " = " + i*j);
+//         }
+//     }
+// }
+
+
+var a = prompt("숫자를 입력하세요.");
+var b = prompt("숫자를 입력하세요.");
+var c = prompt("숫자를 입력하세요.");
+var result = parseInt(a) + parseInt(b) + parseInt(c)
+alert("숫자의 합은 " + result + "입니다.");
