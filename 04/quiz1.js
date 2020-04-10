@@ -16,19 +16,20 @@ var current = document.getElementById("current");
 
 var str = '';
 var count = 1;
+var page = Math.ceil(todayPhoto.length / 3);
 var imageCount = 3;
 
 getImage();
 
 forward.addEventListener("click", function() {
-    if (count == 3) {
-        count = 3;
+    if (count == page) {
+        count = page;
         console.log(count);
-        getImgage();
+        getImage();
     } else {
         count++;
         console.log(count);
-        getImgage();
+        getImage();
     }
 });
 
@@ -36,11 +37,11 @@ back.addEventListener("click", function() {
     if(count == 1) {
         count = 1;
         console.log(count);
-        getImgage();
+        getImage();
     } else {
         count--;
         console.log(count);
-        getImgage();
+        getImage();
     }
 });
 
