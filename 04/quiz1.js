@@ -16,8 +16,9 @@ var current = document.getElementById("current");
 
 var str = '';
 var count = 1;
+var imageCount = 3;
 
-getImgage();
+getImage();
 
 forward.addEventListener("click", function() {
     if (count == 3) {
@@ -45,9 +46,9 @@ back.addEventListener("click", function() {
 
 
 
-function getImgage() {
+function getImage() {
     current.innerHTML = count + "/3";
-    for(var i=(count -1) * 3; i<count * 3; i++){
+    for(var i=(count -1) * imageCount; i<count * imageCount; i++){
         if (i < todayPhoto.length) {
             str += '<img src="'+todayPhoto[i].img+'"> ';
         }
