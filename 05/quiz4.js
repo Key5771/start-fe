@@ -11,7 +11,7 @@ function mouseDown(event) {
 }
 
 function mouseMove(event) {
-    var positionX = event.cliencX;
+    var positionX = event.clientX;
     var positionY = event.clientY;
 
     $box.style.left = positionX + "px";
