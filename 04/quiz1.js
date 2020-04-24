@@ -1,4 +1,4 @@
-var todayPhoto = [
+const todayPhoto = [
     {"url":"http://media.daum.net/photo/2841","img":"http://icon.daumcdn.net/w/c/12/05/82877085750988319.jpeg","title":"&quot;뜨면 끝장&quot; 최강 공격헬기 성능이 설마","id":"20120516082207657"}
     ,{"url":"http://media.daum.net/entertain/photo/gallery/?gid=100320","img":"http://icon.daumcdn.net/w/c/12/05/82876693901189319.jpeg","title":"&#39;오늘만&#39; 필리핀 새댁 5개국어 능통 엄친딸","id":"20120516091011626"}
     ,{"url":"http://media.daum.net/photo/4010","img":"http://icon.daumcdn.net/w/c/12/05/82876307459008319.jpeg","title":"[북한 결혼식 풍경] 신랑·신부 &quot;행복합니다&quot;","id":"20120516092605081"}
@@ -9,10 +9,10 @@ var todayPhoto = [
     ,{"url":"http://sports.media.daum.net/general/gallery/STARKIMYUNA/index.html","img":"http://icon.daumcdn.net/w/c/12/05/81727815537682839.jpeg","title":"&#39;교생&#39; 김연아, 스승의날에도 인기폭발","id":"20120516092003892"}
 ];
 
-var wrap = document.getElementById('wrap');
-var back = document.getElementById("back");
-var forward = document.getElementById("forward");
-var current = document.getElementById("current");
+const wrap = document.getElementById('wrap');
+const back = document.getElementById("back");
+const forward = document.getElementById("forward");
+const current = document.getElementById("current");
 
 var str = '';
 var count = 1;
@@ -51,7 +51,8 @@ function getImage() {
     current.innerHTML = count + "/3";
     for(var i=(count -1) * imageCount; i<count * imageCount; i++){
         if (i < todayPhoto.length) {
-            str += '<img src="'+todayPhoto[i].img+'"> ';
+            // str += '<img src="'+todayPhoto[i].img+'"> ';
+            str += `<img src="${todayPhoto[i].img}">`;
         }
     } 
     wrap.innerHTML = str;
