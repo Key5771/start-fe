@@ -1,0 +1,22 @@
+{
+  "name": "start-fe",
+  "version": "1.0.0",
+  "description": "- 제주대학교 컴퓨터공학전공 4학년 김기현 - 고급웹개발론 start-fe Repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Key5771/start-fe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Key5771/start-fe/issues"
+  },
+  "homepage": "https://github.com/Key5771/start-fe#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
