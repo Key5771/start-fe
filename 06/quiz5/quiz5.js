@@ -1,3 +1,5 @@
+/* eslint-disable no-use-before-define */
+/* eslint-disable no-param-reassign */
 const $box = document.querySelector('.box');
 const $box1 = document.querySelector('.box1');
 
