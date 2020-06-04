@@ -1,3 +1,5 @@
+import { render } from './html-render';
+
 import todoModel from './todo-model';
 
 const $inputForm = document.querySelector('#input-form');
@@ -11,9 +13,12 @@ function init(data) {
     $input.value = '';
 
     data.push({
+      ...todoModel,
       text,
       isDone: false,
     });
+
+    render(data);
   });
 }
 

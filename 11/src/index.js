@@ -3,12 +3,7 @@ import formInput from './form-input';
 
 import './todos.css';
 
-const todos = [
-  {
-    text: 'JS공부하기11111',
-    isDone: false,
-  },
-];
+const todos = [];
 
-formInput.init();
+formInput.init(todos);
 render(todos);
