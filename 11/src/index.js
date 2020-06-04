@@ -1,7 +1,14 @@
+import { render } from './html-render';
+import formInput from './form-input';
+
 import './todos.css';
 
-const $inputForm = document.querySelector('#input-form');
-const $input = document.querySelector('#input');
-const $result = document.querySelector('#result');
+const todos = [
+  {
+    text: 'JS공부하기11111',
+    isDone: false,
+  },
+];
 
-console.log($inputForm);
+formInput.init();
+render(todos);
