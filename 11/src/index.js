@@ -5,12 +5,7 @@ import './todos.css';
 
 const $result = document.querySelector('#result');
 
-const todos = [
-  {
-    text: 'aaa',
-    isDone: false,
-  },
-];
+const todos = [];
 
 $result.addEventListener('click', (event) => {
   const { className } = event.target;
